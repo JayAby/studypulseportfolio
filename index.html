@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Showcase</title>
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666666;
+      --accent: #111111;
+      --border: #e8e1d8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 32px 0 18px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      margin: 0 auto;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: white;
+      padding: 11px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .about {
+      margin-top: 22px;
+    }
+
+    .about p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 28px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .container { padding-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Your Name / Project Title</h1>
+      <p>
+        Welcome to my project showcase. This page includes a short introduction about me,
+        a link to my GitHub repository, and a video demonstration of my work.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>GitHub Repository</h2>
+        <p>
+          View the source code, project structure, and development progress.
+        </p>
+        <a class="button" href="https://github.com/yourusername/your-repo" target="_blank" rel="noopener noreferrer">
+          Open GitHub
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Video Demonstration</h2>
+        <p>
+          Watch a short demo showing how the project works and what it does.
+        </p>
+        <a class="button" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+          Watch Video
+        </a>
+      </div>
+
+      <div class="card about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I’m [Your Name], a final-year Computer Science student with interests in software development,
+          AI, and building practical tools that solve real problems.
+        </p>
+        <p>
+          This project was created to demonstrate my approach to design, implementation,
+          and problem-solving.
+        </p>
+      </div>
+    </section>
+
+    <p class="footer">Hosted with GitHub Pages • QR code can point to this page</p>
+  </div>
+</body>
+</html>
