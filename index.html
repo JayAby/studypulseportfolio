@@ -3,156 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Showcase</title>
-  <style>
-    :root {
-      --bg: #f7f4ef;
-      --card: #ffffff;
-      --text: #1f1f1f;
-      --muted: #666666;
-      --accent: #111111;
-      --border: #e8e1d8;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 32px 0 18px;
-    }
-
-    .hero h1 {
-      margin: 0 0 10px;
-      font-size: 2.2rem;
-    }
-
-    .hero p {
-      margin: 0 auto;
-      max-width: 680px;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 22px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-    }
-
-    .card h2 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 1.25rem;
-    }
-
-    .card p {
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      text-decoration: none;
-      background: var(--accent);
-      color: white;
-      padding: 11px 16px;
-      border-radius: 10px;
-      font-weight: 700;
-    }
-
-    .button:hover {
-      opacity: 0.9;
-    }
-
-    .about {
-      margin-top: 22px;
-    }
-
-    .about p:last-child {
-      margin-bottom: 0;
-    }
-
-    .footer {
-      text-align: center;
-      color: var(--muted);
-      margin-top: 28px;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 1.8rem; }
-      .container { padding-top: 20px; }
-    }
-  </style>
+  <title>StudyPulse | Joel Olubankole</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <nav class="navbar">
+    <div class="logo">StudyPulse</div>
+
+    <div class="nav-links">
+      <a href="#screenshots">Preview</a>
+      <a href="#about">About</a>
+      <a href="#links">Links</a>
+    </div>
+  </nav>
+
+  <main>
     <section class="hero">
-      <h1>StudyPulse Portfolio</h1>
-      <p>
-        Welcome to my project showcase. This page includes a short introduction about me,
-        a link to my GitHub repository, and a video demonstration of my work.
-      </p>
+      <div class="hero-content">
+        <p class="eyebrow">Built by Joel Olubankole</p>
+
+        <h1>StudyPulse</h1>
+
+        <p class="hero-subtitle">
+          An AI-powered study planner designed to help students organise
+          deadlines and generate structured study plans.
+        </p>
+
+        <p class="hero-note">
+          Current status: working local prototype demonstrated through screenshots,
+          code, and video walkthrough.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="https://youtu.be/gZB_kIA10EE"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch Demo
+          </a>
+
+          <a
+            href="https://github.com/JayAby/StudyWithM3"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repo
+          </a>
+
+          <a href="#" class="btn btn-secondary">
+            Portfolio
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h2>GitHub Repository</h2>
-        <p>
-          View the source code, project structure, and development progress.
-        </p>
-        <a class="button" href="https://github.com/JayAby/StudyWithM3" target="_blank" rel="noopener noreferrer">
-          Open GitHub
-        </a>
+    <section class="section" id="screenshots">
+      <div class="section-heading">
+        <p class="section-label">Interface Preview</p>
+        <h2>See StudyPulse in action</h2>
       </div>
 
-      <div class="card">
-        <h2>Video Demonstration</h2>
-        <p>
-          Watch a short demo showing how the project works and what it does.
-        </p>
-        <a class="button" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-          Watch Video
-        </a>
+      <div class="screenshot-grid">
+        <article class="screenshot-card">
+          <img
+            src="assets/images/assessmentInput.png"
+            alt="StudyPulse assessment input interface"
+          />
+          <h3>Assessment Input</h3>
+          <p>Users enter module details, deadlines, and study requirements.</p>
+        </article>
+
+        <article class="screenshot-card">
+          <img
+            src="assets/images/assessmentPlan.png"
+            alt="StudyPulse generated study plan"
+          />
+          <h3>Generated Study Plan</h3>
+          <p>The system creates a structured study schedule from assessment information.</p>
+        </article>
+
+        <article class="screenshot-card">
+          <img
+            src="assets/images/planner.png"
+            alt="StudyPulse structured study tasks"
+          />
+          <h3>Structured Study Tasks</h3>
+          <p>StudyPulse outputs a structured set of study tasks based on deadlines and assessment details.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h2>The builder behind StudyPulse</h2>
       </div>
 
-      <div class="card about">
-        <h2>About Me</h2>
+      <div class="single-card">
         <p>
-          Hi, I’m Joel, a final-year Computer Science student with interests in software development,
-          AI, and building practical tools that solve real problems.
-        </p>
-        <p>
-          This project was created to demonstrate my approach to design, implementation,
-          and problem-solving.
+          I’m Joel Olubankole, a final-year Computer Science student focused on AI,
+          software engineering, and building practical systems that solve real problems.
         </p>
       </div>
     </section>
 
-    <p class="footer">Hosted with GitHub Pages • ©️iamJo3l.</p>
-  </div>
+    <section class="section" id="links">
+      <div class="section-heading">
+        <p class="section-label">Links</p>
+        <h2>Explore more</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Demo Video</h3>
+          <p>Watch a short walkthrough of the current working StudyPulse prototype.</p>
+          <a
+            href="https://youtu.be/gZB_kIA10EE"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open demo →
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>GitHub</h3>
+          <p>View the source code, project structure, and implementation progress.</p>
+          <a
+            href="https://github.com/JayAby/StudyWithM3"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open repository →
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Portfolio</h3>
+          <p>A wider portfolio page for other projects and future work.</p>
+          <a href="#" class="text-link">
+            Open portfolio →
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>StudyPulse • Built by Joel Olubankole</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
